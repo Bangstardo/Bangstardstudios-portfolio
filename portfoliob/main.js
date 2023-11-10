@@ -29,7 +29,7 @@ renderer.render(scene, camera);
 /* This part will create shapes torus geometry */
 
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
-const material = new THREE.MeshStandardMaterial({ color: 0xff6347 });
+const material = new THREE.MeshStandardMaterial({ color: 0x2e2e2e });
 const torus = new THREE.Mesh( geometry, material );
 
 /* adds the shape onto the screen */
@@ -78,7 +78,7 @@ scene.background = spaceTexture
 
 /* defining the the cube with a texture */
 
-const bangstardTexture = new THREE.TextureLoader().load('gitimage.png');
+const bangstardTexture = new THREE.TextureLoader().load('face.png');
 
 const bangstard = new THREE.Mesh(
   new THREE.BoxGeometry(3,3,3),
@@ -89,8 +89,8 @@ scene.add(bangstard)
 
 /* making a sphere */
 
-const sphereTexture = new THREE.TextureLoader().load('');
-const normalTexture = new THREE.TextureLoader().load('');
+const sphereTexture = new THREE.TextureLoader().load('eye.jpg');
+const normalTexture = new THREE.TextureLoader().load('eye.jpg');
 
 const sphere = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
